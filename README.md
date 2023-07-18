@@ -55,7 +55,7 @@ Here is what this would look like in Microsoft Excel (remember to save it as a .
 You can set environment variables and run the app using the following command in the terminal. Here, we're using a .csv file located at `/path/to/your.csv`, and the SRT file will be named `output.srt`, with a subtitle length of `00:00:04`.
 
 ```bash
-CSV="/path/to/your.csv" SRT="output.srt" LEN="00:00:04" node index.js
+CSV="/path/to/your.csv" SRT="output.srt" LEN="00:00:04" node app.js
 ```
 
 After a successful run, you'll see the message "SRT file has been created successfully."
@@ -65,7 +65,7 @@ You can change the `CSV`, `SRT`, and `LEN` environment variables as required and
 For instance, if you have another .csv file at `/another/path/to/your.csv`, and you want the SRT file to be named `new_output.srt` with a subtitle length of `00:00:05`, you would use:
 
 ```bash
-CSV="/another/path/to/your.csv" SRT="new_output.srt" LEN="00:00:05" node index.js
+CSV="/another/path/to/your.csv" SRT="new_output.srt" LEN="00:00:05" node app.js
 ```
 
 #### Windows
@@ -73,25 +73,25 @@ CSV="/another/path/to/your.csv" SRT="new_output.srt" LEN="00:00:05" node index.j
 For Windows Command Prompt, use `set` to specify the environment variables:
 
 ```cmd
-set CSV=C:\path\to\your.csv && set SRT=output.srt && set LEN=00:00:04 && node index.js
+set CSV=C:\path\to\your.csv && set SRT=output.srt && set LEN=00:00:04 && node app.js
 ```
 
 To specify different files or parameters, adjust the values accordingly. For example:
 
 ```cmd
-set CSV=C:\another\path\to\your.csv && set SRT=new_output.srt && set LEN=00:00:05 && node index.js
+set CSV=C:\another\path\to\your.csv && set SRT=new_output.srt && set LEN=00:00:05 && node app.js
 ```
 
 For Windows PowerShell, use the following format:
 
 ```powershell
-$env:CSV="C:\path\to\your.csv"; $env:SRT="output.srt"; $env:LEN="00:00:04"; node index.js
+$env:CSV="C:\path\to\your.csv"; $env:SRT="output.srt"; $env:LEN="00:00:04"; node app.js
 ```
 
 Again, to specify different files or parameters, adjust the values:
 
 ```powershell
-$env:CSV="C:\another\path\to\your.csv"; $env:SRT="new_output.srt"; $env:LEN="00:00:05"; node index.js
+$env:CSV="C:\another\path\to\your.csv"; $env:SRT="new_output.srt"; $env:LEN="00:00:05"; node app.js
 ```
 
 Enjoy converting CSV files to SRT format with ease! 🎉🚀
